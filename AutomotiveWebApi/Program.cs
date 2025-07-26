@@ -59,6 +59,8 @@ namespace AutomotiveWebApi
 
             builder.Services.AddSingleton<IUserService, UserService>();
 
+            builder.Services.AddScoped<IVehicleService, VehicleService>();
+
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowAllOrigins",
