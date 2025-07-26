@@ -39,18 +39,63 @@ A robust ASP.NET Core Web API project built with MongoDB, designed as a wide-ran
 
 ```json
 {
+  "id": "string",
   "make": "string",
   "model": "string",
   "year": 0,
+  "transmission": "string",
+  "fuelTankCapacityL": 0,
+  "horsePower": 0,
+  "torque": 0,
   "fuelType": "string",
+  "mileage": 0,
+  "color": "string",
+  "description": "string",
+  "topSpeed": 0,
+  "accelerationSec0To100Kph": 0,
+  "accelerationSec0To200Kph": 0,
+  "fuelConsumptionPer100km": 0,
+  "co2EmissionsGPerKm": 0,
+  "imageUrl": "string",
+  "galleryUrls": [
+    "string"
+  ],
+  "drivetrain": 0,
+  "type": 1,
   "engine": {
     "type": "string",
     "cylinders": 0,
-    "displacementL": 0
+    "displacementL": 0,
+    "horsepower": 0,
+    "torqueNm": 0,
+    "fuelSystem": "string",
+    "position": "string",
+    "aspiration": "string"
   },
   "dimensions": {
     "lengthMm": 0,
-    "widthMm": 0
+    "widthMm": 0,
+    "heightMm": 0,
+    "wheelbaseMm": 0,
+    "weightKg": 0
   },
-  ...
+  "rimSpecs": {
+    "diameterInches": 0,
+    "widthInches": 0,
+    "offsetMm": 0,
+    "boltPattern": 0,
+    "boltCircleDiameterMm": 0
+  },
+  "frontTyre": {
+    "size": "string",
+    "type": "string",
+    "loadIndex": 0,
+    "speedRating": "string"
+  },
+  "rearTyre": {
+    "size": "string",
+    "type": "string",
+    "loadIndex": 0,
+    "speedRating": "string"
+  }
 }
