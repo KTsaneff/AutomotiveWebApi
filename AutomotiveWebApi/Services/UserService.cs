@@ -27,5 +27,10 @@ namespace AutomotiveWebApi.Services
         {
             return await _usersCollection.Find(u => u.Email == email).FirstOrDefaultAsync();
         }
+
+        public Task<List<User>> GetAllUsersAsync()
+        {
+            return _usersCollection.Find(_ => true).ToListAsync();
+        }
     }
 }

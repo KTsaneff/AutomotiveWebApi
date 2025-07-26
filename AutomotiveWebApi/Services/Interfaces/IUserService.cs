@@ -6,5 +6,7 @@ namespace AutomotiveWebApi.Services.Interfaces
     {
         Task RegisterUserAsync(User user);
         Task<User?> GetUserByEmailAsync(string email);
+
+        Task<List<User>> GetAllUsersAsync();
     }
 }
